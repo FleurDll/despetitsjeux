@@ -1,4 +1,4 @@
-alert("A chaque tour le jeu, introduit une nouvelle couleur. Jusqu'à quel niveau arriveras-tu à recréer la suite ?")
+alert("A chaque tour le jeu introduit une nouvelle couleur. Jusqu'à quel niveau arriveras-tu à recréer la suite ?")
 
 buttonColours = ["red", "blue", "green", "yellow"];
 
