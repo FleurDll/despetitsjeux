@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lancés de Dés</title>
+  <link rel="icon" href="../images/cubes.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles-des.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c0c834ad46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <a href="../index.html"><i class="fas fa-arrow-circle-left retour"></i></a>
+
+  <div class="container-des">
+    <h1 class="titre-des">Lancé de dés :</h1>
+    <br>
+    <input class="btn btn-des" type="button" value="Démarrer" onclick="demanderPrenom();">
+    <br>
+    <button class="reload-des hidden" type="button" name="button" onclick="lanceDeDes();"><i class="far fa-play-circle"></i></button>
+    <br>
+
+
+    <div class="table-des">
+
+      <table class="des">
+        <tr>
+          <td><img class="des1" src="images/dice6.png" alt="image dés"></td>
+          <td><img class="des2" src="images/dice6.png" alt="image dés"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="nom-joueur1">Joueur 1</h2>
+          </td>
+          <td>
+            <h2 class="nom-joueur2">Joueur 2</h2>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <h2 class="score score1 hidden"></h2>
+    <h2 class="gagnant-des hidden">Gagnant</h2>
+    <h2 class="score score2 hidden"></h2>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index-des.js" charset="utf-8"></script>
+</body>
+
+</html>

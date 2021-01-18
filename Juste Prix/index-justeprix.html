@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Le Juste Prix</title>
+  <link rel="icon" href="../images/cubes.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles-justeprix.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c0c834ad46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <a href="../index.html"><i class="fas fa-arrow-circle-left retour"></i></a>
+
+  <div class="container">
+
+    <h1>Le Juste Prix :</h1>
+
+    <h3>Entre un nombre entre <span class="big">1 et 100</span> :</h3>
+
+    <br>
+
+    <div class="input">
+      <input class="input-number input-juste-prix" type="number" autocomplete="off" onkeypress="handle(event)">
+      <button class="btn" type="button" onclick="jeuJustePrix(); clearValueInput();">Valider</button>
+    </div>
+
+    <br>
+
+    <div class="resultats">
+
+      <h2 class="resultat-message">Prêt ?</h2>
+
+      <button class="reload" type="button" onclick="window.location.reload();"><i class="fas fa-redo-alt recommencer"></i></button>
+      <div class="barre-vies ">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+        <img class="heart" src="images/heart-full.png" alt="image d'un coeur">
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index-justeprix.js" charset="utf-8"></script>
+</body>
+
+</html>

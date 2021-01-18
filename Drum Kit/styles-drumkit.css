@@ -1,0 +1,138 @@
+body {
+  background-color: #30475e;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  padding: 45px 0;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 55px;
+}
+
+h2 {
+  border: solid;
+  border-width: 4px;
+  padding: 10px;
+  display: inline-block;
+  border-color: #f05454;
+  margin: 25px;
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+/* RETOUR */
+.retour {
+  color: #f05454;
+  font-size: 50px;
+  margin: 15px;
+}
+
+.retour:hover {
+  transform: rotate(320deg);
+}
+
+/* DRUM KIT */
+.container-drum {
+  text-align: center;
+  margin: 45px auto;
+  border: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #f05454;
+  background-color: #dddddd;
+  width: 800px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 16spx 0px rgba(0, 0, 0, 0.59);
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 10px auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #30475e;
+  font-size: 6rem;
+  font-family: 'VT323', monospace;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #f05454;
+  text-shadow: 2px 0 #30475e;
+  border-radius: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 20px;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+/************************* RESPONSIVE **************************/
+@media (max-width: 1028px) {
+  .container-drum {
+    margin: 5px 15px;
+    width: auto;
+  }
+
+  .retour {
+    font-size: 80px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    padding: 10px;
+    margin: 8px;
+    font-size: 70px;
+  }
+
+  .drum {
+    font-size: 6.5rem;
+    width: 165px;
+    height: 165px;
+    margin: 20px;
+  }
+}

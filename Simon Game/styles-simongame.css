@@ -1,0 +1,121 @@
+body {
+
+  background-color: #30475e;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  padding: 15px 0;
+  margin: 0 5px;
+  display: inline-block;
+  font-size: 55px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.retour {
+  color: #f05454;
+  font-size: 50px;
+  margin: 15px;
+}
+
+.retour:hover {
+  transform: rotate(320deg);
+}
+
+.container-title {
+  margin: 10px auto;
+  border: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #f05454;
+  background-color: #dddddd;
+  width: 750px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+  border: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #f05454;
+  background-color: #dddddd;
+  width: 750px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
+  text-align: center;
+}
+
+#level-title {
+  font-size: 3rem;
+  margin:  10px;;
+  color: black;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/************************* RESPONSIVE **************************/
+@media (max-width: 1028px) {
+  .container, .container-title {
+    margin: 10px 15px;
+    width: auto;
+  }
+
+  .retour {
+    font-size: 80px;
+    margin: 10px;
+  }
+
+  #level-title {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    padding: 10px;
+    margin: 8px;
+    font-size: 70px;
+  }

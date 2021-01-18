@@ -1,0 +1,169 @@
+body {
+  background-color: #30475e;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  padding: 45px 0;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 55px;
+}
+
+h2 {
+  border: solid;
+  border-width: 4px;
+  padding: 10px;
+  display: inline-block;
+  border-color: #f05454;
+  margin: 25px;
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+/* BOUTON RETOUR  */
+.retour {
+  color: #f05454;
+  font-size: 50px;
+  margin: 15px;
+  text-align: left;
+}
+
+.retour:hover {
+  transform: rotate(320deg);
+}
+
+.btn {
+  background: #f05454;
+  background-image: -webkit-linear-gradient(top, #f05454, #C15353);
+  background-image: -moz-linear-gradient(top, #f05454, #C15353);
+  background-image: -ms-linear-gradient(top, #f05454, #C15353);
+  background-image: -o-linear-gradient(top, #f05454, #C15353);
+  background-image: linear-gradient(to bottom, #f05454, #C15353);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: 'VT323', monospace;
+  color: #ffffff;
+  font-size: 35px;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #C15353;
+  background-image: -webkit-linear-gradient(top, #C15353, #f05454);
+  background-image: -moz-linear-gradient(top, #C15353, #f05454);
+  background-image: -ms-linear-gradient(top, #C15353, #f05454);
+  background-image: -o-linear-gradient(top, #C15353, #f05454);
+  background-image: linear-gradient(to bottom, #C15353, #f05454);
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* DES */
+.container-des {
+  text-align: center;
+  margin: 10px auto;
+  border: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #f05454;
+  background-color: #dddddd;
+  width: 800px;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+}
+
+.table-des {
+  display: flex;
+  justify-content: center;
+}
+
+.gagnant-des {
+  border-color: #30475e;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.titre-des {
+  padding-bottom: 30px;
+}
+
+.des img {
+  margin: 0 50px 30px;
+}
+
+.score {
+  font-size: 40px;
+}
+
+.reload-des {
+  border: solid;
+  border-color: #30475e;
+  border-radius: 10px;
+  background-color: #dddddd;
+  margin-bottom: 10px;
+}
+
+.reload-des i {
+  font-size: 50px;
+  margin: 4px;
+  background-color: #dddddd;
+  color: #f05454;
+}
+
+.reload-des i:hover {
+  color: #30475e;
+}
+
+/************************* RESPONSIVE **************************/
+@media (max-width: 1028px) {
+  .container-des {
+    margin: 5px 15px;
+    width: auto;
+  }
+
+  .retour {
+    font-size: 80px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    padding: 10px;
+    margin: 8px;
+    font-size: 70px;
+  }
+
+  .btn {
+    font-size: 65px;
+    padding: 15px 30px;
+  }
+
+  .reload-des i {
+    font-size: 90px;
+    width: 150px;
+  }
+
+  .gagnant-des {
+    font-size: 65px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .score {
+    font-size: 65px;
+  }
+
+  img {
+    width: 225px;
+  }
+}

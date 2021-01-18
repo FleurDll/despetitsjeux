@@ -1,0 +1,91 @@
+
+body {
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  background-color: #30475e;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.liens-jeux {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0;
+  margin: 15px;
+}
+
+.liens-jeux:hover {
+  color: #30475e;
+  border-bottom: solid;
+}
+
+.container {
+  margin: 45px auto;
+  border: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #f05454;
+  background-color: #dddddd;
+  width: 700px;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.59);
+}
+
+.clignoter {
+  animation-name: clignoter;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/************************** FOOTER ***************************/
+.reference {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: #f05454;
+}
+
+/************************* RESPONSIVE **************************/
+@media (max-width: 1028px) {
+  .container {
+    margin: 45px 15px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  .liens-jeux {
+    font-size: 70px;
+    margin: 40px;
+  }
+}

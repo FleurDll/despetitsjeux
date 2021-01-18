@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nombre Binaire</title>
+  <link rel="icon" href="../images/cubes.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles-binary.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c0c834ad46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <a href="../index.html"><i class="fas fa-arrow-circle-left retour"></i></a>
+
+  <div class="container">
+
+    <h1 class="titre-binaire">Tranforme un Nombre Entier en Binaire :</h1>
+    <br>
+
+    <div class="input">
+      <input class="input-number input-binary" type="number" onkeypress="handle(event)" autocomplete="off">
+      <button class="btn" type="button" onclick="getInput();">Valider</button>
+    </div>
+
+    <br>
+    <h2 class="fade-out">Binaire</h2>
+    <br>
+    <div class="resultats hidden">
+      <h2 class="nombre-a-traduire">nombre input</h2>
+
+      <div class="fleche"><i class="fas fa-angle-right"></i></div>
+
+      <h2 class="resultat-binaire">nombre binaire</h2>
+    </div>
+
+  </div>
+
+  <script src="index-binary.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
