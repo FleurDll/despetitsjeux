@@ -23,6 +23,8 @@ h1 {
 .liens-jeux:hover {
   color: #30475e;
   border-bottom: solid;
+  border-width: 5px;
+  border-color: #f05454;
 }
 
 .container {
