@@ -17,7 +17,7 @@ h1 {
   font-weight: bold;
   display: inline-block;
   padding: 0;
-  margin: 15px;
+  margin: 35px;
 }
 
 .liens-jeux:hover {
@@ -81,11 +81,11 @@ a:hover {
   }
 
   h1 {
-    font-size: 85px;
+    font-size: 95px;
   }
 
   .liens-jeux {
-    font-size: 70px;
-    margin: 40px;
+    font-size: 80px;
+    margin: 80px;
   }
 }

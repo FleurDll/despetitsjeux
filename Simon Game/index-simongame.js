@@ -1,3 +1,5 @@
+alert("A chaque tour le jeu, introduit une nouvelle couleur. Jusqu'à quel niveau arriveras-tu à recréer la suite ?")
+
 buttonColours = ["red", "blue", "green", "yellow"];
 
 gamePattern = [];
@@ -6,7 +8,7 @@ userClickedPattern = [];
 started = false;
 level = 0;
 
-$(document).keydown(function(event) {
+$(document).one("keydown", function(event) {
   $("#level-title").text("Level " + level);
   nextSequence();
   started = true;
@@ -31,7 +33,8 @@ function checkAnswer(currentLevel) {
     }
   } else {
     playSound("wrong");
-    $("#level-title").text("Game Over ! Appui sur une touche pour recommencer !");
+    $("#level-title").text("Game Over !");
+    $(".level").text("Game Over !");
 
     $("body").addClass("game-over");
     setTimeout(function() {
@@ -52,6 +55,7 @@ function nextSequence() {
   level++;
 
   $("#level-title").text("Level " + level);
+  $(".level").text("Level " + level);
 
   randomNumber = Math.floor(Math.random() * 4);
   randomChosenColour = buttonColours[randomNumber];
@@ -73,26 +77,17 @@ function startOver() {
   gamePattern = [];
   level = 0;
   started = false;
+  $(document).one("keydown", function(event) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  });
 }
-
 
 // RESPONSIVE
 
-$(window).resize(function() {
-  var width = $(window).width();
-  if (width < 1028){
-    $("#level-title").text("Appui sur l'écran pour commencer");
-  }
-});
-
-function is_touch_enabled() {
-    return ( 'ontouchstart' in window ) ||
-           ( navigator.maxTouchPoints > 0 ) ||
-           ( navigator.msMaxTouchPoints > 0 );
-}
-
-if (is_touch_enabled()) {
-  $("#level-title").text("Level " + level);
+function demarrerPartie() {
+  $(".level").text("Level " + level);
   nextSequence();
   started = true;
 }

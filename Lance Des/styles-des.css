@@ -33,6 +33,7 @@ h2 {
   transform: rotate(320deg);
 }
 
+/* BOUTON DEMARRER  */
 .btn {
   background: #f05454;
   background-image: -webkit-linear-gradient(top, #f05454, #C15353);
@@ -48,6 +49,7 @@ h2 {
   font-size: 35px;
   padding: 8px 20px 8px 20px;
   text-decoration: none;
+  margin: 50px 0 0;
 }
 
 .btn:hover {
@@ -60,6 +62,7 @@ h2 {
   text-decoration: none;
 }
 
+/* ANIMATION  */
 .hidden {
   visibility: hidden;
 }
@@ -82,6 +85,7 @@ h2 {
 .table-des {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .gagnant-des {
@@ -95,7 +99,8 @@ h2 {
 }
 
 .des img {
-  margin: 0 50px 30px;
+  margin: 20px 60px 30px;
+  width: 220px;
 }
 
 .score {
@@ -124,12 +129,12 @@ h2 {
 /************************* RESPONSIVE **************************/
 @media (max-width: 1028px) {
   .container-des {
-    margin: 5px 15px;
+    margin: 65px 15px;
     width: auto;
   }
 
   .retour {
-    font-size: 80px;
+    font-size: 100px;
     margin: 10px;
   }
 
@@ -153,6 +158,10 @@ h2 {
     width: 150px;
   }
 
+  .reload-des {
+    margin-top: 50px;
+  }
+
   .gagnant-des {
     font-size: 65px;
     padding: 10px;
@@ -161,9 +170,14 @@ h2 {
 
   .score {
     font-size: 65px;
+    margin: 0 80px;
   }
 
   img {
     width: 225px;
+  }
+
+  table {
+    border-spacing: 100px;
   }
 }

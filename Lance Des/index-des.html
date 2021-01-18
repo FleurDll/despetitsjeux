@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lancés de Dés</title>
+  <title>Lancer de Dés</title>
   <link rel="icon" href="../images/cubes.ico">
 
   <!-- CSS -->
@@ -21,28 +21,29 @@
   <a href="../index.html"><i class="fas fa-arrow-circle-left retour"></i></a>
 
   <div class="container-des">
-    <h1 class="titre-des">Lancé de dés :</h1>
-    <br>
+    <h1 class="titre-des">Lancer de dés :</h1>
+  </div>
+
+  <div class="container-des">
+
     <input class="btn btn-des" type="button" value="Démarrer" onclick="demanderPrenom();">
     <br>
+
     <button class="reload-des hidden" type="button" name="button" onclick="lanceDeDes();"><i class="far fa-play-circle"></i></button>
+
     <br>
 
 
     <div class="table-des">
 
       <table class="des">
+        <tr class="range-joueur">
+          <td><h2 class="nom-joueur1">Joueur 1</h2></td>
+          <td><h2 class="nom-joueur2">Joueur 2</h2></td>
+        </tr>
         <tr>
           <td><img class="des1" src="images/dice6.png" alt="image dés"></td>
           <td><img class="des2" src="images/dice6.png" alt="image dés"></td>
-        </tr>
-        <tr>
-          <td>
-            <h2 class="nom-joueur1">Joueur 1</h2>
-          </td>
-          <td>
-            <h2 class="nom-joueur2">Joueur 2</h2>
-          </td>
         </tr>
       </table>
 

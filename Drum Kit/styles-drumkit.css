@@ -110,17 +110,17 @@ h3 {
 /************************* RESPONSIVE **************************/
 @media (max-width: 1028px) {
   .container-drum {
-    margin: 5px 15px;
+    margin: 65px 15px;
     width: auto;
   }
 
   .retour {
-    font-size: 80px;
+    font-size: 100px;
     margin: 10px;
   }
 
   h1 {
-    font-size: 85px;
+    font-size: 100px;
   }
 
   h2 {
@@ -130,9 +130,9 @@ h3 {
   }
 
   .drum {
-    font-size: 6.5rem;
-    width: 165px;
-    height: 165px;
-    margin: 20px;
+    font-size: 0;
+    width: 170px;
+    height: 170px;
+    margin: 65px;
   }
 }

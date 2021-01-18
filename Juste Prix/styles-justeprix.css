@@ -164,29 +164,35 @@ h3 {
 /************************* RESPONSIVE **************************/
 @media (max-width: 1028px) {
   .container {
-    margin: 5px 15px;
+    margin: 65px 15px;
     width: auto;
   }
 
   .retour {
-    font-size: 80px;
+    font-size: 100px;
     margin: 10px;
   }
 
   h1 {
-    font-size: 85px;
+    font-size: 75px;
+    margin-bottom: 80px;
   }
 
   h2 {
     padding: 10px;
-    margin: 8px;
-    font-size: 70px;
+    margin: 50px 150px 0 0;
+    font-size: 90px;
+  }
+
+  h3 {
+    font-size: 80px;
+    margin-bottom: 50px;
   }
 
   .input-number {
     height: 100px;
     width: 200px;
-    margin-right: 15px;
+    margin-right: 100px;
   }
 
   .input-number[type="number"] {
@@ -200,10 +206,15 @@ h3 {
 
   .recommencer {
     color: #f05454;
-    font-size: 65px;
+    font-size: 85px;
     padding: 6px;
+  }
+
+  .barre-vies {
+    margin: 60px;
   }
 
   .heart {
     width: 45px;
+    margin: 10px;
   }

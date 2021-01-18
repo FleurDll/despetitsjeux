@@ -20,17 +20,28 @@
 
     <div class="container-title">
       <h1>Simon Game :</h1>
-
     </div>
 
     <div class="container">
 
-      <h1 id="level-title">Appui sur une touche pour commencer</h1>
-      
+      <h1 id="level-title" class="visible">Appui sur une touche pour commencer</h1>
+      <h1 class="level invisible"></h1>
+
 
       <div class="container-button">
 
-        <div lass="row">
+        <table>
+          <tr>
+            <td><div type="button" id="green" class="btn green"></div></td>
+            <td><div type="button" id="red" class="btn red"></div></td>
+          </tr>
+          <tr>
+            <td><div type="button" id="yellow" class="btn yellow"></div></td>
+            <td><div type="button" id="blue" class="btn blue"></div></td>
+          </tr>
+        </table>
+
+        <!-- <div class="row">
           <div type="button" id="green" class="btn green"></div>
           <div type="button" id="red" class="btn red"></div>
         </div>
@@ -38,9 +49,11 @@
         <div class="row">
           <div type="button" id="yellow" class="btn yellow"></div>
           <div type="button" id="blue" class="btn blue"></div>
-        </div>
+        </div> -->
 
       </div>
+
+      <input class="btn-simon-game invisible" type="button" value="Démarrer" onclick="demarrerPartie();">
 
     </div>
 

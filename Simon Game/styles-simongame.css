@@ -7,8 +7,14 @@ body {
 h1 {
   padding: 15px 0;
   margin: 0 5px;
-  display: inline-block;
+  display: block;
   font-size: 55px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {
@@ -53,9 +59,45 @@ h1 {
   text-align: center;
 }
 
+.btn-simon-game {
+  background: #f05454;
+  background-image: -webkit-linear-gradient(top, #f05454, #C15353);
+  background-image: -moz-linear-gradient(top, #f05454, #C15353);
+  background-image: -ms-linear-gradient(top, #f05454, #C15353);
+  background-image: -o-linear-gradient(top, #f05454, #C15353);
+  background-image: linear-gradient(to bottom, #f05454, #C15353);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: 'VT323', monospace;
+  color: #ffffff;
+  font-size: 35px;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.btn-simon-game:hover {
+  background: #C15353;
+  background-image: -webkit-linear-gradient(top, #C15353, #f05454);
+  background-image: -moz-linear-gradient(top, #C15353, #f05454);
+  background-image: -ms-linear-gradient(top, #C15353, #f05454);
+  background-image: -o-linear-gradient(top, #C15353, #f05454);
+  background-image: linear-gradient(to bottom, #C15353, #f05454);
+  text-decoration: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 #level-title {
   font-size: 3rem;
-  margin:  10px;;
+  margin: 30px 0 0;
   color: black;
 }
 
@@ -64,7 +106,7 @@ h1 {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 10px solid #30475e;
   border-radius: 20%;
 }
 
@@ -96,13 +138,18 @@ h1 {
 
 /************************* RESPONSIVE **************************/
 @media (max-width: 1028px) {
-  .container, .container-title {
-    margin: 10px 15px;
+  .container {
+    margin: 25px 15px;
+    width: auto;
+  }
+
+  .container-title {
+    margin: 65px 15px 5px;
     width: auto;
   }
 
   .retour {
-    font-size: 80px;
+    font-size: 100px;
     margin: 10px;
   }
 
@@ -119,3 +166,31 @@ h1 {
     margin: 8px;
     font-size: 70px;
   }
+
+  table {
+    border-spacing: 100px;
+  }
+
+  .invisible {
+    opacity: 1;
+  }
+
+  .visible {
+    opacity: 0;
+  }
+
+  .btn-simon-game {
+    font-size: 65px;
+    padding: 15px 30px;
+    margin-top: 40px;
+  }
+
+  .btn {
+    height: 225px;
+    width: 225px;
+  }
+
+  .level {
+    margin-bottom: 10px;
+  }
+}
