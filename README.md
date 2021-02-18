@@ -1,4 +1,4 @@
-# despetitsjeuxV2
+# Des Petits Jeux
 
 https://fleurdll.github.io/despetitsjeux/
 
