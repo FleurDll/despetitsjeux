@@ -1,5 +1,5 @@
 # despetitsjeuxV2
 
-https://fleurdll.github.io/despetitsjeuxV2/index.html
+https://fleurdll.github.io/despetitsjeux/
 
 HTML, CSS, Javascript, Jquery 
